@@ -1,0 +1,828 @@
+
+
+body {
+	background: linear-gradient(45deg, #c5c6c8, #c5c6c9, #c5c6c5);
+	margin: 0;
+
+}
+.CONTENEDOR {
+	height: 100vh;
+	width: 100%;
+
+
+}
+
+/*TITULO TAPICERIA MAYTE*/
+.titulo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-10px);
+	transform: translateX(12px);
+	filter: contrast(1);
+	height: 120px;
+	width: 420px;
+	/*background: blue;*/
+}
+
+.titulo {
+	align-content: center;
+	text-shadow: 3px 1px 3px #f596f7;
+	border-radius: 20px;
+	animation: brillo 1s alternate-reverse; infinite;
+	letter-spacing: 2px;
+	background: #fff;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 27px;
+
+}
+
+
+.titulo:first-child {
+	animation: brillo 2s running infinite;
+	text-shadow: 4px 2px 5px #fc00ff;
+	filter: blur(0.5px);
+	filter: contrast(100%);
+
+
+
+
+}
+
+
+
+@keyframes brillo {
+	0%,100% {
+		transform: translate(-3px);
+		text-shadow: 4px 3px 5px #ff7ae8;
+		background: linear-gradient(90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.80;
+		transition: opacity 3s;
+
+	}
+
+	20%,40% {
+		transform: translate(3px);
+		text-shadow: 3px 4px 6px #db2c95;
+		background: linear-gradient(-90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.50;
+		transition: opacity 3s;
+
+	}
+
+	80%,100% {
+		transform: translate(-3px);
+		text-shadow: 5px 3px 4px #a52678;
+		background: linear-gradient(90deg, #c5c6c5, #c5c6c5, #c5c6c5);
+		opacity: 0.80;
+		transition: opacity 3s;
+	}
+}
+
+/* AQUI TERMINA EL TITULO*/
+
+/*PRIMERAS IMAGENES INICIO CON EFECTO SLIDER*/
+
+
+/*AQUI TERMINA LAS PRIMERAS IMAGENES EFECTO SLIDER */
+
+/* -------------------------------------------------------------------*/
+/* -------------------------------------------------------------------*/
+/* -------------------------------------------------------------------*/
+
+* {
+ 	font-family: 'Ibarra Real Nova', serif;
+	font-weight: 100;
+	font-size: 20px;
+}
+
+.nav__responsive-ul {
+	display: none;
+
+}
+
+.nav {
+	height: 100vh;
+	width: 100%;
+	/*background: blue;  este nav sirve para cuando presiona suba*/
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 9px;
+	color: #fff;
+}
+.nav__li:hover > a {
+	color: #bbb;
+}
+
+.nav__li:hover {
+	color: #bbb;
+	text-align: left;
+	
+}
+
+
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+}
+
+.nav__responsive-button-container {
+	position: absolute;
+	right: 10px;
+	left: 3px;
+	width: 100%;
+	font-size: 25px;
+	top: -40px;/* BOTON HOME */
+	
+}
+
+.fa-bars {
+	font-size: 35px;
+}
+
+.nav__responsive-button{
+	padding: 8px 20px 30px;
+	text-align: right;
+	width: 100%;
+	position: absolute;
+	left: 5px;
+	/*background: red;*/
+}
+
+
+.mensaje-intro {
+	position: absolute;
+	font-size: 22px;
+	top: 270px
+
+}
+
+.imagen_tapiceria {
+	margin-top: 90px;
+	height: 200px;
+	width: 420px;
+}
+
+.mensaje-1-container {
+	position: absolute;
+	top: 520px;	
+}
+.mensaje-1 {
+	position: absolute;
+	left: 10px;
+
+}
+
+.informacion-1 {
+	font-weight: bold;
+	position: absolute;
+	top: 800px
+}
+@media only screen and (max-width: 525px) {
+	.importante {
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*RESOLUCION PARA MOBILES */
+
+@media only screen and (max-width:  525px) {
+	.titulo_tapizados {
+		font-weight: bold;
+		position: absolute;
+		top: 850px;
+		left: 130px;
+		
+
+	}
+	.importante {
+		margin-top: 2px;
+	}
+
+	.CONTENEDOR {
+		height: 28vh;
+		width: 100%;
+		
+
+	}
+
+	.nav__ul {
+		display: none;
+	}
+	.nav {
+		padding: 0px 0px 30px;
+		transform: translateY(10px);
+		height: 37px;
+		width: 100%;
+	}
+	.nav__responsive-ul {
+	    display: block;
+		position: absolute;
+		width: 90%;
+		margin-top: 370px;
+		padding-top: 27px;
+		height: 100px;
+		transform: translateY(-350px);
+
+		
+	
+	}
+
+
+	.nav__li-container {
+		position: relative;
+		top: -1390px;
+		height:calc(100vh - 120px); 
+		background: #9bf; /* este color es deslizador al dar click*/
+		transition: all 1s;
+		z-index: 1;
+		width: 85%;
+		padding-top: -50px;
+		margin-top: 620px; /*CAMBIA EL DESLIZADOR AL DAR CLICK  */
+		margin-left: -38px;
+		transform: translateY(-620px);
+		background: linear-gradient(-90deg, #95976d, #95978d, #95979d);
+		border-radius: 20px;
+	}
+
+	.nav__responsive-li {
+		width: 100%;
+		padding: 15px 20px;
+
+	}
+
+	.nav__responsive-li i {
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 10px;
+		width: 60px;
+		color: #016;
+
+	}
+
+	.nav__responsive-li a {
+		color: #016;
+		text-decoration: none;
+	}
+
+	.nav__responsive-ul:hover > .nav__li-container {
+		top: -27px;
+	}
+
+
+	.contenedor {
+		border: 0 0 10px solid;
+	}
+
+
+	/*---------------IMAGENES DE "TAPIZADOS"---------------------------*/
+
+	.imagen-ajustar-1 {
+		position: absolute;
+		top: 1280px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+
+	}
+
+	.imagen-1 {
+		margin: 0;
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		margin-top: 650px;
+		background-size: cover;
+		animation: animation-img-1 7s infinite;
+	}
+	 @keyframes animation-img-1 {
+	 	0%,100% {
+	 		background-image: url(imagen1.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 35% {
+	 		background-image: url(imagen2.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen3.jpg);
+	 		background-position: right;
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen4.jpg);
+	 		background-position: left;
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+	 }
+
+
+	.imagen-ajustar-2 {
+	 	position: absolute;
+		top: 2080px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+ 	}
+
+	.imagen-2 {
+	 	margin: 0;
+	 	height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-2 7s infinite;
+	}
+
+	@keyframes animation-img-2 {
+		0%,100% {
+	 		background-image: url(imagen5.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 35% {
+	 		background-image: url(imagen6.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen8.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen9.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+	}
+	.imagen-ajustar-3 {
+		position: absolute;
+		top: 2580px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.imagen-3 {
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-3 7s infinite;
+	}
+
+	@keyframes animation-img-3 {
+		0%,100% {
+	 		background-image: url(imagen11.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 40% {
+	 		background-image: url(imagen14.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen12.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen7.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-4 {
+		position: absolute;
+		top: 3100px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-4 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-4 7s infinite;
+	}
+
+	@keyframes animation-img-4 {
+		0%,100% {
+	 		background-image: url(imagen16.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+
+	 	20%, 40% {
+	 		background-image: url(imagen17.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+
+
+
+	 	45%,55% {
+	 		background-image: url(imagen18.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen19.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-5 {
+		position: absolute;
+		top: 3600px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-5 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-5 7s infinite;
+
+	}
+
+	@keyframes animation-img-5 {
+		0% {
+	 		background-image: url(imagen29.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+	 	}
+	 	20%,40% {
+	 		background-image: url(imagen22.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	 	60%, 80% {
+	 		background-image: url(imagen23.jpg);
+	 		background-size: cover;
+	 		background-position: center;
+
+	 	}
+
+	}
+	.imagen-ajustar-6 {
+		position: absolute;
+		top: 4100px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-6 {
+		
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-6 7s infinite;
+
+	}
+
+	@keyframes animation-img-6 {
+		0%,100% {
+	 		background-image: url(imagen21.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+
+
+	 	}
+	}
+	.imagen-ajustar-7 {
+		position: absolute;
+		top: 4600px;
+	  	left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.imagen-7 {
+		height: 250px;
+		width: 250px;
+		border-radius: 40px;
+		background-size: cover;
+		animation: animation-img-7 7s infinite;
+
+	}
+
+	@keyframes animation-img-7 {
+		0%,100% {
+			background-image: url(imagen31.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+		15%,35% {
+			background-image: url(imagen33.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+
+		45%,65% {
+			background-image: url(imagen34.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+		75%,95% {
+			background-image: url(imagen37.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+		0%,100% {
+			background-image: url(imagen38.jpg);
+	 		background-position: center;
+	 		background-size: cover;
+		}
+
+	}
+
+
+	 /*---------------------MENSAJES DE "TAPIZADOS"--------------*/
+	 /*---------------------RESOLUCION MOVIL--------------*/
+	 @media only screen and (max-width: 1138px) {
+		.mensaje-img-1 {
+		position: absolute;
+		top: 1810px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+	}
+	
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-2 {
+			position: absolute;
+			top: 2230px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-3 {
+			position: absolute;
+			top: 2765px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px)  {
+		.mensaje-img-4 {
+			position: absolute;
+			top: 3250px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-5 {
+			position: absolute;
+			top: 3760px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-6 {
+			position: absolute;
+			top: 4260px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	@media only screen and (max-width: 1138px) {
+		.mensaje-img-7 {
+			position: absolute;
+			top: 4790px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+  	/*-------------------------------------------------------------*/
+  	/*-------------------------------------------------------------*/
+  	/*-------------------------------------------------------------*/
+	/*ANIMACION DE SLIDER, RESOLUCION PARA MOVIL*/
+	.mensajes_fotos {
+		position: absolute;
+		top: 250px;
+		font-weight: bold;
+		opacity: 0;
+		font-size: 20px;
+
+	}
+	.sliderGeral-card:hover .mensajes_fotos { /*CUANDO SE HAGA CLICK EN LA CARTA APARECERA EL MENSAJE DE ABAJO*/
+	  opacity: 1;
+	  position: absolute;
+	  top: 250px;
+	  font-weight: bold;
+	  transition: 1.5s;
+	  font-size: 25px;
+	  /*background: blue;*/
+
+	}
+	
+	
+	img {
+		background-size: cover;
+	}
+	.foto-1 {
+		height: 250px;
+	  	width: 200px;
+	}
+	.foto-2 {
+		height: 250px;
+	  	width: 200px;
+	}
+	.foto-3 {
+		height: 250px;
+	  	width: 200px;
+	}
+	.foto-4 {
+		height: 250px;
+	  	width: 200px;
+	}
+	.foto-5 {
+		height: 250px;
+	  	width: 200px;
+	}
+	.foto-6 {
+		height: 250px;
+	  	width: 200px;
+	}
+
+	.conteudo-geral {
+	  position: absolute;
+	  width: 400px !important; /*ESTO ES IMPORTANTE,HACE QUE NO SALGA DE LOS BORDES*/
+	  top: 150px;
+	  left: 28px !important;
+	  /*background: blue;*/
+
+
+	}
+
+	.conteudo-geral-sliderGeral {
+	  --larguraDoItem: 180px;
+	  --alturaDoItem: 100px;
+	  width: var(--larguraDoItem);
+	  height: var(--alturaDoItem);
+	  perspective: 2000px;
+	  transform: translate(50%,50%);
+	  /*background: red;*/
+	}
+
+	.sliderGeral {
+	  --rotatey: 1;
+	  font-size: 4rem;
+	  position: absolute;
+	  transform: rotatey(var(--rotatey));
+	  transform-style: preserve-3d;
+	  user-select: none;
+	  cursor: grab;
+	  top: -10px;
+	  /*background: red;*/
+
+	}
+
+	.sliderGeral-card {
+	  opacity: 0.97;
+	  position: absolute;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  transition: opacity 0.5s;
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+
+	}
+	.sliderGeral-card:hover {
+	  opacity: 1;
+	  border: solid #4466cc 9px;
+	  box-shadow: 0px 0px 10px #4466cc;
+	}
+	.sliderGeral-card h1 {
+	  color: #fff;
+	  font-size: 1.8rem;
+	}
+
+	.sliderGeral,
+	.sliderGeral-card {
+	  /*width: 100%;*/
+	  /*height: 100%;*/
+	  height: 250px;
+	  width: 200px;
+
+	}
+
+	.sliderGeral-card:nth-child(1) {
+	  --rotatey: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #0093E9, #80D0C7);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+
+	.sliderGeral-card:nth-child(2) {
+	  --rotatey: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #00dbde, #fc00ff);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+
+	.sliderGeral-card:nth-child(3) {
+	  --rotatey: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #50d990, #d4d054);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+	.sliderGeral-card:nth-child(4) {
+	  --rotatey: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #cf91ff, #5782f5);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+
+	.sliderGeral-card:nth-child(5) {
+	  --rotate: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #642b73, #c6426e);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+
+	.sliderGeral-card:nth-child(6) {
+	  --rotatey: 0;
+	  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+	  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+	  box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+	}
+
+	@media screen and (min-width: 576px) {
+	  .conteudo-geral-sliderGeral {
+	    --larguraDoItem: 250px;
+	    --alturaDoItem: 200px;
+	  }
+	}
+	
+}	
